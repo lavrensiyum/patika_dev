@@ -12,4 +12,4 @@ lst = [[1, 2], [3, 4], [5, 6, 7]]
 reverse_list(lst)
 
 lst = input()
-print(reverse_list(lst))
+print(reverse_list(lst)) 
