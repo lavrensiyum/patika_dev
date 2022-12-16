@@ -69,4 +69,4 @@ if __name__ == "__main__":
     # dizideki herbir elementi kontrol ederek yeni diziye int-str özel olarak ekler
     BrandNewList = []
     BrandNewList = ChargeList(ListedString)
-    print("Sonuç >>", BrandNewList) 
+    print("Sonuç >>", BrandNewList)
