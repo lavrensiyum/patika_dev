@@ -40,3 +40,87 @@ SELECT replacement_cost, COUNT(*) FROM film GROUP BY replacement_cost HAVING COU
 SELECT store_id, COUNT(*) FROM customer GROUP BY store_id
 SELECT country_id, COUNT(*) AS city_count FROM city GROUP BY country_id ORDER BY city_count DESC LIMIT 1;
 
+-- Odev 8
+
+    --1
+    CREATE TABLE employee (
+    id INTEGER PRIMARY KEY,
+    name VARCHAR(50),
+    birthday DATE,
+    email VARCHAR(100)
+    );
+
+    --2
+    insert into employee (id, name, birthday, email) values (1, 'Annalise', 'Benediktsson', 'abenediktsson0@google.com');
+    insert into employee (id, name, birthday, email) values (2, 'Wain', 'Eyes', 'weyes1@ameblo.jp');
+    insert into employee (id, name, birthday, email) values (3, 'Valentine', 'Sunderland', 'vsunderland2@4shared.com');
+    insert into employee (id, name, birthday, email) values (4, 'Dorian', 'Mainson', 'dmainson3@nps.gov');
+    insert into employee (id, name, birthday, email) values (5, 'Tyler', 'Frame', 'tframe4@trellian.com');
+    insert into employee (id, name, birthday, email) values (6, 'Eduino', 'Nimmo', 'enimmo5@stanford.edu');
+    insert into employee (id, name, birthday, email) values (7, 'Turner', 'Shovlar', 'tshovlar6@weather.com');
+    insert into employee (id, name, birthday, email) values (8, 'Jaquith', 'Folcarelli', 'jfolcarelli7@fda.gov');
+    insert into employee (id, name, birthday, email) values (9, 'Glen', 'Berthel', 'gberthel8@examiner.com');
+    insert into employee (id, name, birthday, email) values (10, 'Madelene', 'Henken', 'mhenken9@phpbb.com');
+    insert into employee (id, name, birthday, email) values (11, 'Lazar', 'Garr', 'lgarra@abc.net.au');
+    insert into employee (id, name, birthday, email) values (12, 'Fenelia', 'Gorgen', 'fgorgenb@goo.gl');
+    insert into employee (id, name, birthday, email) values (13, 'Gerrie', 'Fewell', 'gfewellc@microsoft.com');
+    insert into employee (id, name, birthday, email) values (14, 'Flemming', 'OBradane', 'fobradaned@drupal.org');
+    insert into employee (id, name, birthday, email) values (15, 'Alfredo', '2022-08', 'alindermanne@istockphoto.com');
+    insert into employee (id, name, birthday, email) values (16, 'Laverne', '2022-06', 'lmcilmurrayf@illinois.edu');
+    insert into employee (id, name, birthday, email) values (17, 'Asa', '2021-12', 'asunnucksg@behance.net');
+    insert into employee (id, name, birthday, email) values (18, 'Doti', '2022-01', 'dmccarrickh@youtu.be');
+    insert into employee (id, name, birthday, email) values (19, 'Wald', '2021-12', 'wgutowskii@diigo.com');
+    insert into employee (id, name, birthday, email) values (20, 'Sloane', '2022-10', 'sseegarj@whitehouse.gov');
+    insert into employee (id, name, birthday, email) values (21, 'Jordanna', '2022-02', 'jgrennank@bing.com');
+    insert into employee (id, name, birthday, email) values (22, 'Shaina', '2022-08', 'soransl@bravesites.com');
+    insert into employee (id, name, birthday, email) values (23, 'Huntington', '2022-06', 'hjarrittm@paginegialle.it');
+    insert into employee (id, name, birthday, email) values (24, 'Ellette', '2022-02', 'ealdwichn@pinterest.com');
+    insert into employee (id, name, birthday, email) values (25, 'Nadiya', '2021-12', 'ntredgeto@barnesandnoble.com');
+    insert into employee (id, name, birthday, email) values (26, 'Hagen', '2022-07', 'hpaynterp@walmart.com');
+    insert into employee (id, name, birthday, email) values (27, 'Michell', '2022-01', 'misenorq@dedecms.com');
+    insert into employee (id, name, birthday, email) values (28, 'Lisabeth', '2022-01', 'lvasilievr@woothemes.com');
+    insert into employee (id, name, birthday, email) values (28, 'Lisabeth', '2022-01', 'lvasilievr@woothemes.com');
+    insert into employee (id, name, birthday, email) values (29, 'Shannon', '2022-12', 'sdisbreys@ocn.ne.jp');
+    insert into employee (id, name, birthday, email) values (30, 'Kimbra', '2021-12', 'kcurrant@blog.com');
+    insert into employee (id, name, birthday, email) values (31, 'Waylen', 'Kingaby', 'wkingabyu@blinklist.com');
+    insert into employee (id, name, birthday, email) values (32, 'Wilma', 'Ridsdale', 'wridsdalev@infoseek.co.jp');
+    insert into employee (id, name, birthday, email) values (33, 'Petunia', 'Moylane', 'pmoylanew@cornell.edu');
+    insert into employee (id, name, birthday, email) values (34, 'Timothy', 'De Hailes', 'tdehailesx@xing.com');
+    insert into employee (id, name, birthday, email) values (35, 'Isac', 'Grigg', 'igriggy@cpanel.net');
+    insert into employee (id, name, birthday, email) values (36, 'Em', 'Cranney', 'ecranneyz@abc.net.au');
+    insert into employee (id, name, birthday, email) values (37, 'Jessica', 'Gallyhaock', 'jgallyhaock10@merriam-webster.com');
+    insert into employee (id, name, birthday, email) values (38, 'Callie', 'Matej', 'cmatej11@nydailynews.com');
+    insert into employee (id, name, birthday, email) values (39, 'Darbie', 'Buckthorpe', 'dbuckthorpe12@indiegogo.com');
+    insert into employee (id, name, birthday, email) values (40, 'Quentin', 'Casley', 'qcasley13@wsj.com');
+    insert into employee (id, name, birthday, email) values (41, 'Lonnie', 'OKynsillaghe', 'lokynsillaghe14@usa.gov');
+    insert into employee (id, name, birthday, email) values (42, 'Bertie', 'Vigietti', 'bvigietti15@cloudflare.com');
+    insert into employee (id, name, birthday, email) values (43, 'Caleb', 'Sandbatch', 'csandbatch16@squidoo.com');
+    insert into employee (id, name, birthday, email) values (44, 'Jarrod', '2022-05', 'jmucklo17@answers.com');
+    insert into employee (id, name, birthday, email) values (45, 'Lyn', 'Ickovitz', 'lickovitz18@narod.ru');
+    insert into employee (id, name, birthday, email) values (46, 'Veradis', 'Bates', 'vbates19@epa.gov');
+    insert into employee (id, name, birthday, email) values (47, 'Gris', 'Dabrowski', 'gdabrowski1a@flickr.com');
+    insert into employee (id, name, birthday, email) values (48, 'Leia', 'Ellsom', 'lellsom1b@elpais.com');
+    insert into employee (id, name, birthday, email) values (49, 'Sacha', 'Thys', 'sthys1c@tmall.com');
+    insert into employee (id, name, birthday, email) values (50, 'Brittni', 'Timbrell', 'btimbrell1d@skyrock.com');
+
+    -- 3
+    UPDATE employee SET id = 51 WHERE ID = 45;
+    UPDATE employee SET name = 'John' WHERE ID = 46;
+    UPDATE employee SET birthday = 'Ankara' WHERE ID = 47;
+    UPDATE employee SET email = 'john@example.com' WHERE ID = 48;
+    UPDATE employee SET id = 52 WHERE ID = 49;
+
+    -- 4
+    DELETE FROM employee WHERE ID = 45;
+    DELETE FROM employee WHERE ID = 46;
+    DELETE FROM employee WHERE ID = 47;
+    DELETE FROM employee WHERE ID = 48;
+    DELETE FROM employee WHERE ID = 49;
+    DELETE FROM employee WHERE ID = 50;
+
+
+
+
+
+
+
