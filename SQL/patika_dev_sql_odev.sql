@@ -118,6 +118,36 @@ SELECT country_id, COUNT(*) AS city_count FROM city GROUP BY country_id ORDER BY
     DELETE FROM employee WHERE ID = 49;
     DELETE FROM employee WHERE ID = 50;
 
+-- Odev 9
+    SELECT city.name, country.name
+    FROM city
+    INNER JOIN country
+    ON city.country_code = country.code
+
+    SELECT payment.payment_id, customer.first_name, customer.last_name
+    FROM payment
+    INNER JOIN customer
+    ON payment.customer_id = customer.customer_id;
+
+    SELECT c.first_name, c.last_name, r.rental_id
+    FROM customer c
+    INNER JOIN rental r ON c.customer_id = r.customer_id;
+
+-- Odev 10
+    SELECT city.name AS city_name, country.name AS country_name
+    FROM city
+    LEFT JOIN country ON city.country_id = country.id;
+
+    SELECT payment.payment_id, customer.first_name, customer.last_name
+    FROM customer
+    RIGHT JOIN payment ON customer.customer_id = payment.customer_id;
+
+    SELECT c.first_name, c.last_name, r.rental_id
+    FROM customer c
+    FULL JOIN rental r ON c.rental_id = r.rental_id;
+
+-- Odev 11
+    
 
 
 
