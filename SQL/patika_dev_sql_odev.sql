@@ -163,6 +163,28 @@ SELECT country_id, COUNT(*) AS city_count FROM city GROUP BY country_id ORDER BY
     SELECT first_name FROM actor INTERSECT ALL SELECT first_name FROM customer;
     SELECT first_name FROM actor EXCEPT ALL SELECT first_name FROM customer;
 
+-- Odev 12
+    SELECT COUNT(*)
+    FROM film
+    WHERE length > (SELECT AVG(length) FROM film);
+
+    SELECT COUNT(*)
+    FROM film
+    WHERE rental_rate = (SELECT MAX(rental_rate) FROM film);
+
+    SELECT *
+    FROM film
+    WHERE rental_rate = (SELECT MIN(rental_rate) FROM film)
+    AND replacement_cost = (SELECT MIN(replacement_cost) FROM film)
+    ORDER BY rental_rate ASC, replacement_cost ASC;
+
+    SELECT customer_id, COUNT(*) as purchases
+    FROM payment
+    GROUP BY customer_id
+    ORDER BY purchases DESC;
+
+
+
 
 
 
