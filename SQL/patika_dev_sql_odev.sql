@@ -182,11 +182,5 @@ SELECT country_id, COUNT(*) AS city_count FROM city GROUP BY country_id ORDER BY
     FROM payment
     GROUP BY customer_id
     ORDER BY purchases DESC;
-
-
-
-
-
-
-
-
+    
+✨✨✨
